@@ -549,7 +549,7 @@ def _build_summary_text(state, pending: int, updated_at: str) -> str:
         f"Awaiting your approval: {pending}\n"
         f"Invoices generated: {state.invoices_generated}\n"
         f"Errors: {state.errors}\n\n"
-        f"<i>Last updated: {updated_at} UTC</i>\n"
+        f"<i>Last updated: {updated_at} IST</i>\n"
         f"System: RUNNING"
     )
 
@@ -565,7 +565,9 @@ async def _five_minute_summary_loop():
 
         pending = await _count_pending_approvals()
         state = await _get_state()
-        updated_at = datetime.utcnow().strftime("%H:%M:%S")
+        from datetime import timedelta
+        ist_time = datetime.utcnow() + timedelta(hours=5, minutes=30)
+        updated_at = ist_time.strftime("%I:%M:%S %p")
         text = _build_summary_text(state, pending, updated_at)
 
         from telegram import InlineKeyboardButton, InlineKeyboardMarkup
