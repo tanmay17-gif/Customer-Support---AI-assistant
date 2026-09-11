@@ -1,0 +1,182 @@
+[
+  {
+    "id": "email-001",
+    "from_name": "Sarah Mitchell",
+    "from_email": "sarah.mitchell@example.com",
+    "subject": "Wrong item received — Order ORD-1001",
+    "body": "Hi Support,\n\nI ordered a Wireless Keyboard (Order ORD-1001, $89.99) but received a completely different item — a USB Hub. I have attached my original receipt for reference.\n\nThis is quite frustrating as I needed the keyboard for work. Could you please arrange a replacement or issue a full refund?\n\nThank you,\nSarah Mitchell",
+    "received_at": "2026-09-10T08:10:00+05:30",
+    "source": "demo",
+    "attachment_filename": "receipt_ORD1001.png"
+  },
+  {
+    "id": "email-002",
+    "from_name": "James Okafor",
+    "from_email": "james.ok@example.com",
+    "subject": "Damaged product on arrival — ORD-1003",
+    "body": "Hello,\n\nMy Laptop Stand (Order ORD-1003, $59.99) arrived with a cracked base — it's completely unusable. I've attached the invoice for your records. I am requesting a full refund as I no longer trust the quality of this item.\n\nPlease process this urgently.\n\nRegards,\nJames Okafor",
+    "received_at": "2026-09-10T07:45:00+05:30",
+    "source": "demo",
+    "attachment_filename": "invoice_ORD1003.png"
+  },
+  {
+    "id": "email-003",
+    "from_name": "Priya Sharma",
+    "from_email": "priya.sharma@example.com",
+    "subject": "Invoice amount is wrong — ORD-1012",
+    "body": "Hi,\n\nI received invoice #ORD-1012 for a 4K Monitor but the amount charged ($749.99) does not match the agreed price of $649.99 at the time of purchase.\n\nI have attached the incorrect invoice. Please reissue a corrected invoice and process a refund for the difference of $100.00.\n\nThanks,\nPriya Sharma",
+    "received_at": "2026-09-10T07:20:00+05:30",
+    "source": "demo",
+    "attachment_filename": "invoice_ORD1012.png"
+  },
+  {
+    "id": "email-004",
+    "from_name": "David Chen",
+    "from_email": "d.chen@example.com",
+    "subject": "App keeps crashing on startup — not order related",
+    "body": "Hi Team,\n\nI downloaded your desktop companion app last week and it crashes every single time I open it. I'm on Windows 11 (22H2). I've tried reinstalling three times. No error message, it just closes immediately.\n\nThis is very frustrating. Can someone from technical support look into this?\n\nDavid Chen",
+    "received_at": "2026-09-10T06:55:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-005",
+    "from_name": "Emily Watson",
+    "from_email": "emily.w@example.com",
+    "subject": "Order still not delivered — ORD-1007",
+    "body": "Hello,\n\nMy order ORD-1007 (Mechanical Keyboard, $149.99) was placed 8 days ago and was supposed to arrive within 5 business days. Tracking shows it's been stuck in transit for 4 days.\n\nCan you please investigate and either deliver the item or issue a refund? I've attached my receipt.\n\nThanks,\nEmily Watson",
+    "received_at": "2026-09-10T06:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": "receipt_ORD1007.png"
+  },
+  {
+    "id": "email-006",
+    "from_name": "Carlos Rivera",
+    "from_email": "c.rivera@example.com",
+    "subject": "Refund request for returned item — ORD-1005",
+    "body": "Hi,\n\nI returned my Mouse (ORD-1005, $49.99) via courier 10 days ago as it had a faulty scroll wheel from day one. The tracking shows the return was delivered to your warehouse 7 days ago.\n\nI have not received my refund yet. Can you please process it? The receipt is attached.\n\nCarlos Rivera",
+    "received_at": "2026-09-10T06:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": "receipt_ORD1005.png"
+  },
+  {
+    "id": "email-007",
+    "from_name": "Ananya Patel",
+    "from_email": "ananya.p@example.com",
+    "subject": "Double charged for Order ORD-1009",
+    "body": "Hello Support,\n\nI was charged twice for Order ORD-1009 (USB-C Hub, $45.99). I can see two identical charges of $45.99 on my credit card statement from the same date.\n\nPlease refund the duplicate charge immediately. I can provide bank statement screenshots if needed.\n\nAnanya Patel",
+    "received_at": "2026-09-10T05:45:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-008",
+    "from_name": "Michael Brown",
+    "from_email": "m.brown@example.com",
+    "subject": "Wrong colour item — want replacement ORD-1016",
+    "body": "Hi,\n\nI ordered a Black Desk Lamp (ORD-1016, $45.99) but received a white one. I'd prefer a replacement in the correct colour rather than a refund. Please arrange this.\n\nI've attached the receipt.\n\nMichael Brown",
+    "received_at": "2026-09-10T05:20:00+05:30",
+    "source": "demo",
+    "attachment_filename": "receipt_ORD1016.png"
+  },
+  {
+    "id": "email-009",
+    "from_name": "Sophie Turner",
+    "from_email": "sophie.t@example.com",
+    "subject": "Missing item from order ORD-1019",
+    "body": "Hello,\n\nI received my Docking Station (ORD-1019, $189.99) but the box was missing the power adapter that is listed in the product description as included.\n\nIs this a packing error? Can you send the missing adapter or issue a partial refund?\n\nSophie Turner",
+    "received_at": "2026-09-10T05:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-010",
+    "from_name": "Kevin Nguyen",
+    "from_email": "k.nguyen@example.com",
+    "subject": "Invoice request for Order ORD-1020",
+    "body": "Hi,\n\nI need a proper tax invoice for Order ORD-1020 (External SSD, $119.99) for my business expense claim. The receipt I received does not show the GST breakdown.\n\nCould you please reissue the invoice with a full tax breakdown?\n\nThanks,\nKevin Nguyen",
+    "received_at": "2026-09-10T04:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": "invoice_ORD1020.png"
+  },
+  {
+    "id": "email-011",
+    "from_name": "Laura Jenkins",
+    "from_email": "laura.j@example.com",
+    "subject": "Product not as described — ORD-1011",
+    "body": "Hello,\n\nThe Drawing Tablet I received (ORD-1011, $299.99) is an older model (2022) but I ordered the 2024 edition as listed on your website. I have screenshots of the product listing.\n\nThis is misleading advertising. I want either the correct 2024 model sent as a replacement or a full refund.\n\nLaura Jenkins",
+    "received_at": "2026-09-10T04:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-012",
+    "from_name": "Omar Hassan",
+    "from_email": "omar.h@example.com",
+    "subject": "Password reset not working — account locked",
+    "body": "Hi,\n\nI've been trying to reset my account password for 2 days but I'm not receiving the reset email. My account seems to be locked. I've checked spam folders.\n\nCan someone manually reset my account or help me get back in? My registered email is omar.h@example.com.\n\nOmar Hassan",
+    "received_at": "2026-09-10T03:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-013",
+    "from_name": "Nina Clarke",
+    "from_email": "nina.clarke@example.com",
+    "subject": "Refund for cancelled order ORD-9999",
+    "body": "Hi Support,\n\nI cancelled order ORD-9999 immediately after placing it (within 2 minutes) but was still charged $234.50. The cancellation confirmation says the order was cancelled but the charge went through anyway.\n\nPlease refund this as I do not have an invoice for a cancelled order.\n\nNina Clarke",
+    "received_at": "2026-09-10T03:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-014",
+    "from_name": "Raj Patel",
+    "from_email": "raj.p@example.com",
+    "subject": "General enquiry about warranty on ORD-1004",
+    "body": "Hello,\n\nI purchased a Monitor (ORD-1004, $449.99) 6 months ago. I'd like to know what the warranty covers and how to make a warranty claim if the backlight starts failing.\n\nDo I need to send the unit in? What is the turnaround time?\n\nThank you,\nRaj Patel",
+    "received_at": "2026-09-10T02:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-015",
+    "from_name": "Zoe Campbell",
+    "from_email": "zoe.c@example.com",
+    "subject": "Ergonomic Chair arrived scratched — ORD-1015",
+    "body": "Hi,\n\nMy Ergonomic Chair (ORD-1015, $499.99) was delivered yesterday. When I unpacked it I found multiple scratches on the armrests and a small crack on the base. I've attached photos — my receipt is also attached.\n\nGiven the price of this item, I expect either a replacement unit or a significant partial refund. Please advise.\n\nZoe Campbell",
+    "received_at": "2026-09-10T02:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": "receipt_ORD1015.png"
+  },
+  {
+    "id": "email-016",
+    "from_name": "Tom Harrison",
+    "from_email": "tom.h@example.com",
+    "subject": "Subscription billed after cancellation",
+    "body": "Hi,\n\nI cancelled my monthly subscription on Aug 28th but was billed again on September 1st for $19.99. I have the cancellation confirmation email.\n\nPlease refund the September charge and confirm the subscription is cancelled.\n\nTom Harrison",
+    "received_at": "2026-09-10T01:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-017",
+    "from_name": "Fatima Al-Rashid",
+    "from_email": "fatima.ar@example.com",
+    "subject": "How do I track my order ORD-1018?",
+    "body": "Hello,\n\nI placed an order for a Power Strip (ORD-1018, $34.99) 3 days ago. I haven't received any tracking information yet. Could you send me the tracking number?\n\nThank you,\nFatima Al-Rashid",
+    "received_at": "2026-09-10T01:00:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  },
+  {
+    "id": "email-018",
+    "from_name": "Liam Murphy",
+    "from_email": "liam.m@example.com",
+    "subject": "Keyboard tray instructions missing — ORD-1017",
+    "body": "Hi,\n\nI received the Keyboard Tray (ORD-1017, $79.99) but there were no assembly instructions in the box. The product requires assembly and I'm not sure how to proceed. Could you email me a PDF of the instructions or a link to a guide?\n\nLiam Murphy",
+    "received_at": "2026-09-10T00:30:00+05:30",
+    "source": "demo",
+    "attachment_filename": null
+  }
+]

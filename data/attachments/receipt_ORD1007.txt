@@ -1,0 +1,24 @@
+=====================================
+         SupportAI STORE
+       Customer Receipt / Invoice
+=====================================
+Order ID    : ORD-1007
+Date        : 2026-09-02
+Customer    : Emily Watson
+
+-------------------------------------
+ITEMS
+-------------------------------------
+Mechanical Keyboard             x1   $149.99
+
+-------------------------------------
+Subtotal    :                $134.99
+GST (10%)   :                $15.00
+-------------------------------------
+TOTAL PAID  :                $149.99
+-------------------------------------
+Payment     : Visa ending 9901
+
+Thank you for your purchase!
+For support: support@supportai.example.com
+=====================================

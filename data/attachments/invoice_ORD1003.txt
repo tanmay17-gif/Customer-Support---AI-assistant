@@ -1,0 +1,24 @@
+=====================================
+         SupportAI STORE
+       Customer Receipt / Invoice
+=====================================
+Order ID    : ORD-1003
+Date        : 2026-09-01
+Customer    : James Okafor
+
+-------------------------------------
+ITEMS
+-------------------------------------
+Laptop Stand                    x1   $59.99
+
+-------------------------------------
+Subtotal    :                $53.99
+GST (10%)   :                $6.00
+-------------------------------------
+TOTAL PAID  :                $59.99
+-------------------------------------
+Payment     : Mastercard ending 8823
+
+Thank you for your purchase!
+For support: support@supportai.example.com
+=====================================

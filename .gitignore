@@ -1,0 +1,43 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Database & vector store
+data/cs_assistant.db
+data/chroma_db/
+data/gmail_token.json
+
+# Generated files (auto-created at runtime)
+data/invoices/
+data/logs/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+
+# Secrets & credentials
+*.pem
+credentials.json
+token.json
+gmail_token.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/

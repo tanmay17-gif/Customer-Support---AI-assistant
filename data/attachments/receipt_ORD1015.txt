@@ -1,0 +1,24 @@
+=====================================
+         SupportAI STORE
+       Customer Receipt / Invoice
+=====================================
+Order ID    : ORD-1015
+Date        : 2026-09-07
+Customer    : Zoe Campbell
+
+-------------------------------------
+ITEMS
+-------------------------------------
+Ergonomic Chair                 x1   $499.99
+
+-------------------------------------
+Subtotal    :                $449.99
+GST (10%)   :                $50.00
+-------------------------------------
+TOTAL PAID  :                $499.99
+-------------------------------------
+Payment     : Amex ending 0077
+
+Thank you for your purchase!
+For support: support@supportai.example.com
+=====================================

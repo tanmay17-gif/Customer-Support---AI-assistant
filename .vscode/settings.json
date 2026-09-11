@@ -1,0 +1,13 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\tanmay\\Documents\\CS_Assistant\\backend\\venv\\Scripts\\python.exe",
+  "python.analysis.extraPaths": [
+    "C:\\Users\\tanmay\\Documents\\CS_Assistant\\backend"
+  ],
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.terminal.activateEnvironment": true,
+  "python.venvPath": "C:\\Users\\tanmay\\Documents\\CS_Assistant\\backend",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
+}

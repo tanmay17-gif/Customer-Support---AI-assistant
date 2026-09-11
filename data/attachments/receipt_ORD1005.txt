@@ -1,0 +1,24 @@
+=====================================
+         SupportAI STORE
+       Customer Receipt / Invoice
+=====================================
+Order ID    : ORD-1005
+Date        : 2026-08-25
+Customer    : Carlos Rivera
+
+-------------------------------------
+ITEMS
+-------------------------------------
+Wireless Mouse                  x1   $49.99
+
+-------------------------------------
+Subtotal    :                $44.99
+GST (10%)   :                $5.00
+-------------------------------------
+TOTAL PAID  :                $49.99
+-------------------------------------
+Payment     : Debit ending 3311
+
+Thank you for your purchase!
+For support: support@supportai.example.com
+=====================================

@@ -1,0 +1,46 @@
+# ── Core API ────────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# ── LLM ─────────────────────────────────────────────────────────────────────
+google-generativeai>=0.8.0      # PRIMARY — Gemini
+openai>=1.40.0                  # Optional fallback
+anthropic>=0.31.0               # Optional fallback
+
+# ── OCR ─────────────────────────────────────────────────────────────────────
+paddleocr==2.8.1
+paddlepaddle>=2.6.2       # CPU-only build; swap for paddlepaddle-gpu if CUDA available
+
+# ── RAG / Vector DB ─────────────────────────────────────────────────────────
+chromadb==0.5.3
+sentence-transformers==3.0.1
+
+# ── Database ─────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.31
+aiosqlite==0.20.0
+
+# ── PDF generation ───────────────────────────────────────────────────────────
+reportlab==4.2.2
+Pillow==10.4.0
+
+# ── Gmail integration ────────────────────────────────────────────────────────
+google-auth==2.32.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+google-api-python-client==2.139.0
+
+# ── Email parsing / HTML ─────────────────────────────────────────────────────
+beautifulsoup4==4.12.3
+lxml==5.2.2
+jinja2==3.1.4             # For HTML email templates
+premailer==3.10.0         # Inline CSS for email clients
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.8.2
+pydantic-settings==2.3.4
+httpx==0.27.0
+python-dateutil==2.9.0
+tenacity==8.5.0           # LLM retry logic
+loguru==0.7.2

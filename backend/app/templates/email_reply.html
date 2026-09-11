@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{ subject }}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #F5F4F0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #1A1A18;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .wrap {
+      max-width: 580px;
+      margin: 48px auto;
+    }
+
+    /* ── Top bar ─────────────────────────────── */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #1A1A18;
+      margin-bottom: 36px;
+    }
+    .brand {
+      font-family: -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1A1A18;
+    }
+    .brand img {
+      height: 20px;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .ref-tag {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 11px;
+      color: #888880;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Status strip ────────────────────────── */
+    .status-strip {
+      margin-bottom: 32px;
+    }
+    .status-label {
+      font-family: -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888880;
+      margin-bottom: 6px;
+    }
+    .status-value {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-style: italic;
+      color: #1A1A18;
+      line-height: 1.2;
+    }
+
+    /* ── Salutation ──────────────────────────── */
+    .salutation {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #1A1A18;
+    }
+
+    /* ── Body paragraph ──────────────────────── */
+    .body-paragraph {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #2C2C28;
+      margin-bottom: 32px;
+    }
+
+    /* ── Detail table ────────────────────────── */
+    .detail-block {
+      border-top: 1px solid #D8D7D0;
+      border-bottom: 1px solid #D8D7D0;
+      padding: 20px 0;
+      margin-bottom: 36px;
+    }
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 7px 0;
+    }
+    .detail-row + .detail-row {
+      border-top: 1px solid #EEECEA;
+    }
+    .detail-key {
+      font-family: -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888880;
+    }
+    .detail-val {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 13px;
+      color: #1A1A18;
+      text-align: right;
+    }
+    .detail-val.plain {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    /* ── Sign-off ────────────────────────────── */
+    .signoff {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #2C2C28;
+      margin-bottom: 48px;
+    }
+
+    /* ── Footer rule ─────────────────────────── */
+    .footer {
+      border-top: 1px solid #1A1A18;
+      padding-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .footer-left {
+      font-family: -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 11px;
+      color: #888880;
+      letter-spacing: 0.03em;
+    }
+    .footer-right {
+      font-family: -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 11px;
+      color: #888880;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="brand">
+      {% if brand_logo_url %}<img src="{{ brand_logo_url }}" alt="{{ brand_name }}" />{% endif %}
+      {{ brand_name }}
+    </div>
+    <div class="ref-tag">{{ reference_id }}</div>
+  </div>
+
+  <!-- Status strip -->
+  <div class="status-strip">
+    <div class="status-label">Status</div>
+    <div class="status-value">
+      {% if action_type == 'refund' %}Refund processed
+      {% elif action_type == 'replace' %}Replacement arranged
+      {% elif action_type == 'reissue_invoice' %}Invoice reissued
+      {% elif action_type == 'escalate' %}Referred to our team
+      {% else %}Response sent
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Salutation -->
+  <div class="salutation">Dear {{ customer_name }},</div>
+
+  <!-- Main body paragraph -->
+  <div class="body-paragraph">{{ body_paragraph }}</div>
+
+  <!-- Order detail block -->
+  <div class="detail-block">
+    {% if order_id %}
+    <div class="detail-row">
+      <span class="detail-key">Order</span>
+      <span class="detail-val">{{ order_id }}</span>
+    </div>
+    {% endif %}
+    {% if item %}
+    <div class="detail-row">
+      <span class="detail-key">Item</span>
+      <span class="detail-val plain">{{ item }}</span>
+    </div>
+    {% endif %}
+    {% if amount %}
+    <div class="detail-row">
+      <span class="detail-key">Amount</span>
+      <span class="detail-val">${{ "%.2f"|format(amount) }}</span>
+    </div>
+    {% endif %}
+    <div class="detail-row">
+      <span class="detail-key">Outcome</span>
+      <span class="detail-val plain">{{ new_status }}</span>
+    </div>
+  </div>
+
+  <!-- Sign-off -->
+  <div class="signoff">
+    If anything is unclear or you need to follow up, reply directly to this email.<br/><br/>
+    {{ agent_name or 'The Support Team' }}
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span class="footer-left">{{ brand_name }} &middot; Support</span>
+    <span class="footer-right">&copy; {{ year }}</span>
+  </div>
+
+</div>
+</body>
+</html>
+

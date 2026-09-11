@@ -1,0 +1,68 @@
+# SupportAI: Presentation Content
+
+Use this structured content to build your slide deck. It covers the core problem, your unique innovations, the technical architecture, and the future scope.
+
+---
+
+## Slide 1: Title Slide
+**Title:** SupportAI: The Autonomous, Self-Improving Customer Support Engine
+**Subtitle:** Moving beyond simple chatbots to verifiable, adversarial AI resolution.
+
+---
+
+## Slide 2: The Problem with Current AI Tools
+*   **Blind Trust:** Existing AI support tools make decisions (like issuing refunds) in a black box. If they hallucinate or make a mistake, there is no audit trail explaining *why*.
+*   **Vulnerable to Fraud:** Standard AI cannot detect manipulated receipts, fake invoices, or customers abusing the return policy.
+*   **Stagnant Knowledge:** When human agents override an AI's bad decision, the AI doesn't learn. It will make the exact same mistake tomorrow unless an engineer manually updates its prompt or database.
+*   **Premature Escalation:** Most bots simply give up and escalate to a human the moment a piece of information (like an Order ID) is missing.
+
+---
+
+## Slide 3: What We Built
+We built a complete, end-to-end B2B SaaS customer support pipeline that acts as a true autonomous agent rather than a simple chatbot. 
+*   It reads incoming emails and extracts data from attached receipt images using Vision AI.
+*   It queries live databases to match orders and customer history.
+*   It searches a vector database (RAG) for company-specific policies.
+*   It autonomously executes actions (refunds, replacements, store credit) and drafts contextual replies.
+
+---
+
+## Slide 4: Our Key Innovations (The "Wow" Factor)
+*This is what sets the project apart from everything else on the market.*
+
+**1. Adversarial "Critic" Architecture**
+Instead of trusting one AI, we use a Dual-LLM system. A primary AI decides the action, but before execution, a secondary independent **Auditor Agent** evaluates the decision. It checks for policy violations, receipt tampering, and high claim frequencies. If it detects risk, it VETOs the action and forces human review.
+
+**2. Cryptographic Evidence Chain (SHA-256 Ledger)**
+Like a blockchain for customer support. Every event in the pipeline (Email Received → OCR → Policy Search → LLM Decision → Auditor Verdict → Action) is hashed and cryptographically linked. This creates an unbreakable, verifiable audit trail proving exactly why the AI issued a refund.
+
+**3. The Self-Improving Policy Loop**
+Our system learns from human corrections. If human agents override the AI 3 times for a similar issue, the AI analyzes the overrides and **autonomously drafts a policy amendment in plain English**. With one click, a manager can approve it, and the system instantly updates its live RAG vector database. 
+
+**4. Multi-Turn Autonomous Resolution**
+If a customer forgets to provide their Order ID, our system doesn't immediately escalate to a human. It shifts into a `request_info` state, autonomously emailing the customer to ask for the missing details, keeping the human support team completely free from trivial data-gathering.
+
+---
+
+## Slide 5: Features Overview
+*   **True Multi-Tenancy:** Single codebase securely isolating data, policies, and vector embeddings for multiple businesses (e.g., TechGadgets Inc. vs StyleHub Apparel).
+*   **Escalation Dossiers:** When a human *is* needed, they don't just get a forwarded email. They get a structured intelligence brief showing customer sentiment, auditor flags, policy excerpts, and a recommended action.
+*   **Live Gmail Integration:** Real-time polling via IMAP, automatically processing live customer emails and saving drafted replies directly to the Gmail drafts folder.
+*   **Automated PDF Generation:** Instantly generates branded PDF invoices, refund receipts, and replacement confirmations based on the AI's actions.
+
+---
+
+## Slide 6: How We Built It (Tech Stack)
+*   **Frontend Interface:** React + Vite, styled with a modern, ultra-clean B2B SaaS aesthetic (custom CSS, Lucide icons).
+*   **Backend Engine:** Python with FastAPI for high-performance async processing.
+*   **Database:** SQLite via SQLAlchemy (aiosqlite) for rapid, relational data management and ledger storage.
+*   **AI & LLM:** Powered entirely by **Google Gemini 3.1 Pro** via the new `google-genai` SDK, utilizing its advanced multimodal capabilities for both text reasoning and receipt image OCR.
+*   **Vector Database:** **ChromaDB** for Retrieval-Augmented Generation (RAG), creating isolated policy collections for each tenant.
+
+---
+
+## Slide 7: Future Scope
+*   **E-Commerce Integration:** Replace the mock database with live GraphQL integrations for Shopify, Stripe, and Salesforce.
+*   **True Blockchain Ledger:** Transition the internal SHA-256 evidence chain to a public or enterprise blockchain (like Polygon or Hyperledger) for immutable, third-party verifiable compliance audits.
+*   **Omnichannel AI:** Expand the pipeline beyond Email/Gmail to ingest and resolve tickets from WhatsApp, Twitter/X, and Voice calls.
+*   **Predictive Policy Generation:** Have the AI monitor global support trends (e.g., a sudden spike in shipping delays) and proactively propose temporary policy changes before human agents even notice the trend.

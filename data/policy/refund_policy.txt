@@ -1,0 +1,73 @@
+SUPPORTAI REFUND & RETURN POLICY
+Version 2.1 | Effective Date: January 1, 2026
+====================================================
+
+1. ELIGIBILITY WINDOW
+---------------------
+- Physical products: Returns accepted within 30 days of confirmed delivery.
+- Digital products / subscriptions: No physical return required; refund eligibility is
+  30 days from purchase or charge date.
+- Items must be unused and in original packaging UNLESS the item arrived damaged or
+  was incorrect — in those cases, used or opened items are accepted for return.
+
+2. REFUNDS
+----------
+- Full refund: Issued when the product is defective, damaged on arrival, incorrect
+  (wrong item shipped), or when the customer cancels within the eligibility window
+  and meets return conditions.
+- Partial refund: May be issued at support agent discretion when the item has been
+  partially used but a genuine defect exists. Typical range: 20%–50% of order value.
+- Processing time: Refunds are credited to the original payment method within 5–7
+  business days of approval.
+- Duplicate charges: Automatically refunded within 2 business days upon verification.
+- Cancelled-order charges: If a charge occurred on a successfully cancelled order,
+  a full refund is issued immediately.
+
+3. REPLACEMENTS
+---------------
+- Available within the 30-day return window for wrong items, defective items, or
+  items damaged in transit.
+- If an item arrives damaged/broken and the customer requests a replacement, the replacement is immediately approved without escalation, provided the item value is under $500.
+- Customer must indicate preference for replacement over refund; if preference is
+  unclear, default to offering refund.
+- Replacement ships within 2 business days of approval; original item need not be
+  returned for orders under $150. For orders $150 and above, a return label is sent.
+
+4. INVOICE CORRECTIONS
+-----------------------
+- If the customer was charged an amount different from the agreed/listed price,
+  a corrected invoice is issued and the price difference refunded within 5 business days.
+- Invoice reissue requests (e.g., for tax/GST breakdown) are fulfilled within 1 business day.
+- Corrected invoices are sent as PDF attachments to the customer's registered email.
+
+5. SUBSCRIPTIONS
+----------------
+- Cancellations take effect at the end of the current billing cycle unless the
+  customer requests immediate cancellation, in which case a pro-rated refund applies.
+- If a charge occurs after a confirmed cancellation, it is refunded in full — no
+  questions asked.
+
+6. ESCALATION TRIGGERS (HUMAN REVIEW REQUIRED)
+------------------------------------------------
+The following situations must be escalated to a human agent:
+  a. Order ID does not exist in the system.
+  b. The email content is ambiguous or contradicts the order record.
+  c. Claim value exceeds $500 and involves suspected fraud.
+  d. Customer has had more than 3 refund requests in the past 90 days.
+  e. Technical support issues (account access, app bugs, etc.) — these are not
+     handled by the automated refund system.
+  f. Warranty claims — route to the dedicated warranty team.
+  g. Missing assembly instructions — route to product content team.
+
+7. OUT-OF-SCOPE ITEMS
+-----------------------
+- This policy does not cover third-party seller products.
+- Shipping delays caused by courier are not eligible for refunds under this policy
+  unless the item has not arrived within 15 business days of estimated delivery.
+- Cosmetic damage to packaging (not the product itself) does not qualify for a refund.
+
+8. CONTACT & ESCALATION
+------------------------
+- Automated refunds and replacements are processed by SupportAI.
+- Human escalation is handled by support@supportai.example.com within 24 hours.
+- Emergency line (fraud/security): +1-800-SUPPORT (business hours only).
