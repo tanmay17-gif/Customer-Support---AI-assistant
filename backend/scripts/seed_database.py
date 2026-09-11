@@ -12,9 +12,11 @@ import random
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 ORDERS = [
-    ("101", "Tanmay", "www.tanu1725@gmail.com", "Wireless Keyboard", 89.99, "processing"),
-    ("102", "Tanmay", "www.tanu1725@gmail.com", "USB Hub", 34.99, "delivered"),
-    ("103", "Tanmay", "www.tanu1725@gmail.com", "Laptop Stand", 59.99, "shipped"),
+    ("101", "Tanmay Chaudhary", "www.tanu1725@gmail.com", "Wireless Keyboard", 89.99, "processing"),
+    ("102", "Tanmay Chaudhary", "www.tanu1725@gmail.com", "USB Hub", 34.99, "delivered"),
+    ("103", "Tanmay Chaudhary", "www.tanu1725@gmail.com", "Laptop Stand", 59.99, "shipped"),
+    ("104", "Mrunal Amkar", "mrunalamkar@example.com", "27-inch Monitor", 449.99, "delivered"),
+    ("105", "Mrunal Amkar", "mrunalamkar@example.com", "Wireless Mouse", 49.99, "delivered"),
     ("ORD-1001", "Sarah Mitchell", "sarah.mitchell@example.com", "Wireless Keyboard", 89.99, "delivered"),
     ("ORD-1002", "James Okafor", "james.ok@example.com", "USB Hub", 34.99, "delivered"),
     ("ORD-1003", "James Okafor", "james.ok@example.com", "Laptop Stand", 59.99, "delivered"),

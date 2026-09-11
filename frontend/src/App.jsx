@@ -238,17 +238,8 @@ export default function App() {
               <div className="summary-row">
                 <span className="summary-label">Status</span>
                 <span className="summary-value" style={{ color: 'var(--accent-resolved)' }}>
-                  Ready (configure token in .env)
+                  Connected
                 </span>
-              </div>
-              <div style={{ marginTop: 12, padding: '12px 16px', borderRadius: '8px', background: 'var(--bg)', border: '1px dashed var(--border)' }}>
-                <p style={{ fontSize: '0.82rem', color: 'var(--muted)', margin: 0, lineHeight: '1.6' }}>
-                  <strong>Setup:</strong><br/>
-                  1. Message <code>@BotFather</code> on Telegram → create a bot → copy the token.<br/>
-                  2. Add <code>TELEGRAM_BOT_TOKEN=...</code> and <code>TELEGRAM_ADMIN_CHAT_ID=...</code> to <code>.env</code>.<br/>
-                  3. Restart the backend.<br/>
-                  4. Message your bot: <code>START</code>
-                </p>
               </div>
               <div style={{ marginTop: 12, fontSize: '0.8rem', color: 'var(--muted)' }}>
                 <strong>Commands:</strong> <code>START</code> · <code>STOP</code> · <code>/status</code> · <code>/help</code>

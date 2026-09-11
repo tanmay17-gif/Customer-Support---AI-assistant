@@ -324,18 +324,6 @@ Pipeline Orchestrator
 
 ---
 
-## Built With
-
-- **Backend:** FastAPI, SQLAlchemy (async), SQLite
-- **AI:** Google Gemini 1.5 Flash (primary LLM)
-- **RAG:** ChromaDB + sentence-transformers
-- **Email:** IMAP (Gmail), SMTP, Jinja2 HTML templates
-- **Admin Interface:** python-telegram-bot
-- **Frontend:** React, Vite
-- **PDF Generation:** ReportLab
-
----
-
 ## License
 
 MIT License. Use it, fork it, build on it.

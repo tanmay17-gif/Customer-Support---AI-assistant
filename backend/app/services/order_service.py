@@ -74,10 +74,13 @@ async def find_orders_for_customer(db: AsyncSession, email: Optional[str], name:
         
         result = await db.execute(stmt)
         orders = list(result.scalars().all())
-        if orders:
-            return orders
+        
+        # Security fix: If an email is provided, we strictly match on email.
+        # We do NOT fallback to matching by name, to prevent data leakage 
+        # between different accounts sharing the same name.
+        return orders
 
-    # 2. Smart match by name (case-insensitive & word overlap)
+    # 2. Match by name ONLY IF email is not provided at all
     if name:
         name_clean = name.strip().lower()
         words = [w for w in re.split(r"\s+", name_clean) if len(w) > 1]
@@ -91,12 +94,9 @@ async def find_orders_for_customer(db: AsyncSession, email: Optional[str], name:
         matched = []
         for o in all_orders:
             db_name = (o.customer_name or "").lower()
-            db_email = (o.customer_email or "").lower()
             if name_clean == db_name or name_clean in db_name or db_name in name_clean:
                 matched.append(o)
-            elif words and all(w in db_name or w in db_email for w in words):
-                matched.append(o)
-            elif words and len(words) > 1 and any(w in db_name for w in words):
+            elif words and all(w in db_name for w in words):
                 matched.append(o)
 
         if matched:
